@@ -1,30 +1,35 @@
-sudo xbps-install git &&
-sudo xbps-install -y xorg-minimal gtk+ nano  gcc curl cmus roxterm emptty fff ffmpeg 
-youtube-dl rofi sed herstluftwm lynx tor-browser qt5 qt5ct neofetch tint2 btop mc redshift feh picom 
-gedit lxappearance bat ripgrep figlet light 
+## PROBABLY DO ext4 NOT btrfs THIS TIME
+sudo xbps-install git
+git clone https://github.com/ktnlikeasmallcat/herbsvoid_dots
+
+##CLI
+sudo xbps-install -y mtm killall nano gcc curl emptty fff cmus ffmpeg youtube-dl lynx tor-browser neofetch btop mc bat ripgrep figlet light timeshift 
+linux-firmware-amd alsa-utils
+(Enable alsa service) also check out (( https://github.com/i-rinat/apulse/blob/master/README.md ))
+
+##GUI
+sudo xbps-install -y xinit xorg-minimal f86-video-amd gtk+ roxterm rofi herstluftwm qt5 qt5ct tint2 redshift feh picom gedit lxappearance
 
 git clone https://github.com/ryanoasis/nerd-fonts && cd nerd-fonts && ./install.sh Hack
 ##then delete the repo
+ (( https://docs.voidlinux.org/config/graphical-session/fonts.html ))
 
 ###THEMING### 
 echo "[icon theme]" >> /home/$USER/.icons/default
 echo "Inherits=Posy's Cursor Mono Black" >> /home/$USER/.icons/default
 ((  https://store.kde.org/p/1795042/  ))
 
-needs to have these folders:
+~/.icons needs to have these folders:
 Posy's Curso Mono Black and tokyonight_dark
 
    ALSO
-/home/$USER/.local/share/icons/
-contains 
-the Posy's Curso Mono Black icon pack from  ((  https://store.kde.org/p/1795042/  ))
+/home/$USER/.local/share/icons/Posy's Curso Mono Black
+icon pack from ((  https://store.kde.org/p/1795042/  ))
 and 
 cp /home/$USER/.icons/default /home/$USER/.local/share/icons/default
-
+(( https://docs.voidlinux.org/config/graphical-session/icons.html))
    ALSO
-/home/$USER/.themes 
-needs
-Catppucin-Mocha-Teal.zip (( https://github.com/catppuccin/gtk/tree/main/src/main ))
+/home/$USER/.themes/Catppucin-Mocha-Teal.zip (( https://github.com/catppuccin/gtk/tree/main/src/main ))
 
    ALSO 
 put (( https://gitlab.com/nesstero/catppuccin )) somewhere qt5ct can get at it
