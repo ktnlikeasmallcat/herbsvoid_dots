@@ -1,1 +1,1 @@
-sudo xbps-install -y roxterm emptty rofi herstluftwm lynx tor-browser qt5ct neofetch tint2 btop mc redshift feh picom rustup
+sudo xbps-install -y roxterm emptty rofi herstluftwm lynx tor-browser qt5ct neofetch tint2 btop mc redshift feh picom gedit
