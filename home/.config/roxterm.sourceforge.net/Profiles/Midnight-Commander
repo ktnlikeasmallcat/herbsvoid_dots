@@ -1,0 +1,15 @@
+[roxterm profile]
+bold_is_bright=0
+font=Hack 10
+maximise=1
+hide_menubar=1
+borderless=0
+always_show_tabs=0
+show_add_tab_btn=0
+colour_scheme=Tango
+saturation=0.704782
+vspacing=5
+hspacing=5
+new_tabs_adjacent=1
+use_custom_command=1
+command=mc

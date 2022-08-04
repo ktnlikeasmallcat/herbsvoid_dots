@@ -1,0 +1,19 @@
+[roxterm profile]
+bold_is_bright=0
+font=Hack 20
+maximise=0
+hide_menubar=1
+borderless=1
+always_show_tabs=0
+show_add_tab_btn=0
+colour_scheme=Tangopower
+saturation=1.000000
+vspacing=50
+hspacing=50
+new_tabs_adjacent=1
+use_custom_command=0
+command=sudo reboot now
+win_title=%s
+audible_bell=0
+login_shell=0
+exit_action=1
