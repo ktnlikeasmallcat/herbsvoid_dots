@@ -1,6 +1,6 @@
 [roxterm colour scheme]
-foreground=#eeeeeeeeecec
-background=#000000000000
+foreground=#5757e3e38989
+background=#24241f1f3131
 0=#2e2e34343636
 1=#cccc00000000
 2=#4e4e9a9a0606
@@ -28,4 +28,4 @@ background=#000000000000
 cursor=#eeeeeeeeecec
 palette_size=16
 cursorfg=#000000000000
-bold=#ffffffffffff
+bold=#c0c06161cbcb
