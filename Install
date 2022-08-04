@@ -1,29 +1,30 @@
 sudo xbps-install git &&
-sudo xbps-install -y roxterm emptty rofi herstluftwm lynx tor-browser qt5ct neofetch tint2 btop mc redshift feh picom gedit lxappearance
+sudo xbps-install -y xorg-minimal gtk+ nano  gcc curl cmus roxterm emptty fff ffmpeg 
+youtube-dl rofi sed herstluftwm lynx tor-browser qt5 qt5ct neofetch tint2 btop mc redshift feh picom 
+gedit lxappearance bat ripgrep figlet light 
 
-/home/$USER/.icons/default
-reads
-"
-[icon theme]
-Inherits=Posy's Cursor Mono Black
-" 
+git clone https://github.com/ryanoasis/nerd-fonts && cd nerd-fonts && ./install.sh Hack
+##then delete the repo
+
+###THEMING### 
+echo "[icon theme]" >> /home/$USER/.icons/default
+echo "Inherits=Posy's Cursor Mono Black" >> /home/$USER/.icons/default
+((  https://store.kde.org/p/1795042/  ))
+
 needs to have these folders:
 Posy's Curso Mono Black and tokyonight_dark
 
    ALSO
- 
 /home/$USER/.local/share/icons/
 contains 
-Posy's Curso Mono Black
+the Posy's Curso Mono Black icon pack from  ((  https://store.kde.org/p/1795042/  ))
 and 
-default 
-which also reads 
-"
-[icon theme]
-Inherits=Posy's Cursor Mono Black
-"
-  ALSO
+cp /home/$USER/.icons/default /home/$USER/.local/share/icons/default
 
+   ALSO
 /home/$USER/.themes 
 needs
-Catppucin-Mocha-Teal.zip
+Catppucin-Mocha-Teal.zip (( https://github.com/catppuccin/gtk/tree/main/src/main ))
+
+   ALSO 
+put (( https://gitlab.com/nesstero/catppuccin )) somewhere qt5ct can get at it
