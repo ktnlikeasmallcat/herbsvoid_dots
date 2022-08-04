@@ -1,1 +1,29 @@
-sudo xbps-install -y roxterm emptty rofi herstluftwm lynx tor-browser qt5ct neofetch tint2 btop mc redshift feh picom gedit
+sudo xbps-install git &&
+sudo xbps-install -y roxterm emptty rofi herstluftwm lynx tor-browser qt5ct neofetch tint2 btop mc redshift feh picom gedit lxappearance
+
+/home/$USER/.icons/default
+reads
+"
+[icon theme]
+Inherits=Posy's Cursor Mono Black
+" 
+needs to have these folders:
+Posy's Curso Mono Black and tokyonight_dark
+
+   ALSO
+ 
+/home/$USER/.local/share/icons/
+contains 
+Posy's Curso Mono Black
+and 
+default 
+which also reads 
+"
+[icon theme]
+Inherits=Posy's Cursor Mono Black
+"
+  ALSO
+
+/home/$USER/.themes 
+needs
+Catppucin-Mocha-Teal.zip
